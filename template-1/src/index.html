@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- HERE PLACE FOR GOOGLE ANALYTICS SCRIPT -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>template-1</title>
+
+  <!-- UNCOMMENT THAT WHAT YOU NEED -->
+
+  <!-- <meta name="description" content="your own description"> -->
+  <meta name="author" content="Jakub Gania">
+  <!-- <meta name="keywords" content="your keywords"> -->
+
+  <!-- https://ogp.me -->
+  
+  <!-- <meta property="og:title" content="template-1"> -->
+  <!-- <meta property="og:type" content="website"> -->
+  <!-- <meta property="og:url" content="your own domain / url"> -->
+  <!-- <meta property="og:description" content="your own description"> -->
+  <!-- <meta property="og:locale" content="en_US"> -->
+  <!-- <meta property="og:image" content="path to photo"> -->
+  <!-- <meta property="og:image:secure_url" content="path to photo"> -->
+  <!-- <meta property="og:image:width" content="1200"> -->
+  <!-- <meta property="og:image:height" content="630"> -->
+
+  <!-- <link rel="icon" type="image/png" sizes="512x512" href="path to icon" /> -->
+  <!-- <link rel="icon" type="image/png" sizes="384x384" href="path to icon" /> -->
+  <!-- <link rel="icon" type="image/png" sizes="192x192" href="path to icon" /> -->
+  <!-- <link rel="icon" type="image/png" sizes="48x48" href="path to icon" /> -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="path to icon" /> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="path to icon" /> -->
+
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- to do -->
+  <!-- adjustment for mobile breakpoint -->
+  <!-- social icons in footer section -->
+  <!-- think about other elements -->
+  <!-- hover effect for top bar menu items -->
+
+  <!-- privacy policy alert section -->
+  <div id="privacy-policy-alert" class="hidden absolute w-full bg-gray-800/60 h-screen z-[999999]">
+    <div class="absolute bottom-0 bg-white w-full opacity-100 z-[9999999]">
+      <div class="max-w-screen-xl mx-auto pl-10 pr-10 py-24">
+        <div>
+          <p class="text-3xl font-black pb-6">
+            Privacy policy
+          </p>
+        </div>
+        <div class="flex items-center">
+          <div>
+            <p class="text-base tracking-wide mb-6 mr-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div>
+            <button class="w-full text-center md:w-fit md:mx-auto py-2 uppercase tracking-wide lg:py-4 rounded-md pl-16 pr-16 text-sm font-semibold text-black border-[1px] border-blue-500 shadow-md shadow-blue-500/50 cursor-default hover:text-white hover:tracking-wider hover:bg-blue-600 ease-in duration-75" onclick="accept()">
+              accept
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navigation bar -->
+  <nav class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="max-w-screen-2xl h-16 flex items-center justify-between mx-auto">
+      <div>
+        <img src="./test-logo.png" width="130" />
+      </div>
+      <div>
+        <ul class="flex font-semibold list-none">
+          <li class="pr-4 text-sm tracking-wide">
+            <a href="#section_1">
+              Title 1
+            </a>
+          </li>
+          <li class="pr-4 text-sm tracking-wide">
+            <a href="#section_2">
+              Title 2
+            </a>
+          </li>
+          <li class="pr-4 text-sm tracking-wide">
+            <a href="#section_3">
+              Title 3
+            </a>
+          </li>
+          <li class="pr-4 text-sm tracking-wide">
+            <a href="#section_4">
+              Title 4
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="px-2">
+            EN
+          </div>
+          <div class="px-2">
+            DE
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- top section with main title -->
+  <div class="h-[44rem] flex items-center bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="max-w-screen-2xl mx-auto text-black text-left">
+      <div>
+        <span class="text-8xl font-black tracking-wide">
+          Hello.
+        </span>
+      </div>
+      <div>
+        <span class="text-8xl font-black tracking-wide">
+          Sample Text.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto mt-60">
+    <div class="w-full text-center">
+      <span id="word-changer" class="text-6xl font-black tracking-wide">
+        example
+      </span>
+    </div>
+  </div>
+
+  <div id="section_1" class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2 items-center">
+      <div>
+        <img src="./test-12.jpg" />
+      </div>
+      <div class="ml-32">
+        <h2 class="text-3xl font-semibold tracking-wide">
+          Section_1
+        </h2>
+        <p class="text-lg tracking-wide mt-5 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul class="list-disc pl-12">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+        <!-- <p class="text-lg tracking-wide mt-5 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> -->
+        <!-- <ul class="list-disc pl-12">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- section with background or image as background -->
+  <div class="h-[28rem] flex items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div class="max-w-screen-2xl mx-auto text-black text-left">
+      <span class="text-8xl font-black tracking-wide">
+        sample title.
+      </span>
+    </div>
+  </div>
+  
+  <div id="section_2" class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2">
+      <div class="flex items-center justify-center">
+        <img src="./arrows-1.svg" width="120" />
+      </div>
+      <div>
+        <h3 class="text-3xl font-semibold tracking-wide">
+          sample title 1
+        </h3>
+        <p class="text-lg tracking-wide mb-5 mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-lg tracking-wide">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2">
+      <div>
+        <h3 class="text-3xl font-semibold tracking-wide">
+          sample title 2
+        </h3>
+        <p class="text-lg tracking-wide mb-5 mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-lg tracking-wide">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./arrows-2.svg" width="120" />
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2">
+      <div class="flex items-center justify-center">
+        <img src="./arrows-3.svg" width="120" />
+      </div>
+      <div>
+        <h3 class="text-3xl font-semibold tracking-wide">
+          sample title 3
+        </h3>
+        <p class="text-lg tracking-wide mb-5 mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-lg tracking-wide">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2">
+      <div>
+        <h3 class="text-3xl font-semibold tracking-wide">
+          sample title 4
+        </h3>
+        <p class="text-lg tracking-wide mb-5 mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="text-lg tracking-wide">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="./arrows-4.svg" width="120" />
+      </div>
+    </div>
+  </div>
+
+  <!-- section with background or image as background -->
+  <div class="h-[28rem] flex items-center bg-gradient-to-r from-sky-500 via-pink-500 to-yellow-600">
+    <div class="max-w-screen-2xl mx-auto text-black text-left">
+      <span class="text-8xl font-black tracking-wide">
+        sample title.
+      </span>
+    </div>
+  </div>
+
+  <div id="section_3" class="max-w-screen-2xl mx-auto my-60">
+    <div class="grid grid-cols-2 items-center">
+      <div class="mr-32">
+        <h3 class="text-3xl font-semibold tracking-wide">
+          Some title
+        </h3>
+        <p class="text-lg tracking-wide mt-5 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="text-lg tracking-wide mt-5 mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div>
+        <img src="./test-12.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- section with background or image as background -->
+  <div class="h-[28rem] flex items-center bg-gradient-to-r from-orange-600 via-rose-700 to-purple-800">
+    <div class="max-w-screen-2xl mx-auto text-black text-left">
+      <span class="text-8xl font-black tracking-wide">
+        sample title.
+      </span>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div class="w-full">
+    <div class="text-center mt-60 mb-20">
+      <h2 class="text-3xl font-semibold tracking-wide">
+        Contact
+      </h2>
+    </div>
+  </div>
+
+  <div id="section_4" class="max-w-screen-2xl gap-4 grid grid-cols-2 mx-auto mb-60">
+    <div class="py-8 pl-8 bg-slate-50 rounded-2xl group">
+      <div class="flex items-center">
+        <div class="w-16">
+          <img class="group-hover:-rotate-12 ease-in duration-100" src="./icons8-phone-96.png" width="96" height="96" />
+        </div>
+        <div class="ml-8">
+          <p class="text-2xl font-bold tracking-wide">
+            Telephone
+          </p>
+          <a href="123123123" class="tracking-wide">
+            123 123 1123
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="py-8 pl-8 bg-slate-50 rounded-2xl group">
+      <div class="flex items-center">
+        <div class="w-16">
+          <img class="group-hover:-rotate-12 ease-in duration-100" src="./icons8-laptop-e-mail-96.png" width="96" height="96" />
+        </div>
+        <div class="ml-8">
+          <p class="text-2xl font-bold tracking-wide">
+            E-mail
+          </p>
+          <a href="mailto:example@example.com" class="tracking-wide">
+            example@example.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section with background or image as background -->
+  <div class="h-[28rem] flex items-center bg-gradient-to-r from-orange-500 to-rose-600">
+    <div class="max-w-screen-2xl mx-auto text-black text-left">
+      <span class="text-8xl font-black tracking-wide">
+        sample title.
+      </span>
+    </div>
+  </div>
+
+  <!-- social media section -->
+  <div class="w-full">
+    <div class="text-center mt-60 mb-20">
+      <h2 class="text-3xl font-semibold tracking-wide">
+        Social Media
+      </h2>
+    </div>
+  </div>
+
+  <div class="max-w-screen-2xl mx-auto mb-60">
+    <div class="grid grid-cols-4 gap-8">
+      <a href="" target="_blank">
+        <div class="rounded-2xl bg-slate-50 hover:bg-slate-100 ease-in duration-100 text-center group">
+          <div class="py-8">
+            <div class="flex justify-center mb-4">
+              <img class="group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-facebook-144.png" width="100" />
+            </div>
+            <span class="text-xl font-bold group-hover:tracking-wider ease-in duration-100">
+              Facebook
+            </span>
+          </div>
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="rounded-2xl bg-slate-50 hover:bg-slate-100 ease-in duration-100 text-center group">
+          <div class="py-8">
+            <div class="flex justify-center mb-4">
+              <img class="group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-instagram-144.png" width="100" />
+            </div>
+            <span class="text-xl font-bold group-hover:tracking-wider ease-in duration-100">
+              Instagram
+            </span>
+          </div>
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="rounded-2xl bg-slate-50 hover:bg-slate-100 ease-in duration-100 text-center group">
+          <div class="py-8">
+            <div class="flex justify-center mb-4">
+              <img class="group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-youtube-144.png" width="100" />
+            </div>
+            <span class="text-xl font-bold group-hover:tracking-wider ease-in duration-100">
+              YouTube
+            </span>
+          </div>
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="rounded-2xl bg-slate-50 hover:bg-slate-100 ease-in duration-100 text-center group">
+          <div class="py-8">
+            <div class="flex justify-center mb-4">
+              <img class="group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-twitter-144.png" width="100" />
+            </div>
+            <span class="text-xl font-bold group-hover:tracking-wider ease-in duration-100">
+              Twitter
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <footer class="bg-slate-100">
+    <div class="max-w-screen-2xl mx-auto">
+      <div class="py-28">
+        <div class="pb-20">
+          <img src="./test-logo.png" width="130" />
+        </div>
+        <div class="grid grid-cols-3">
+          <!-- <div class="border-r-2 border-slate-200"> -->
+          <div class="">
+            <h4 class="text-xl mb-8 font-thin tracking-wider uppercase text-gray-400">
+              general
+            </h4>
+            <div class="text-sm text-gray-500">
+              <div class="mb-1">
+                Home
+              </div>
+              <div class="mb-1">
+                About
+              </div>
+              <div class="mb-1">
+                Contact 
+              </div>
+              <div class="mb-1">
+                Privacy policy
+              </div>
+            </div>
+          </div>
+          <!-- <div class="border-r-2 border-slate-200 pl-4"> -->
+          <div class="">
+            <h4 class="text-xl mb-8 font-thin tracking-wider uppercase text-gray-400">
+              contact
+            </h4>
+            <div class="text-sm text-gray-500">
+              <div class="flex mb-1">
+                <img src="./icons8-envelope-30.png" width="20" class="mr-2" /> E-mail:
+              </div>
+              <div class="pb-2">
+                <a href="mailto:example@example.com" class="text-blue-400">
+                  example@example.com
+                </a>
+              </div>
+              <div class="flex mb-1">
+                <img src="./icons8-phone-30.png" width="20" class="mr-2" /> Telephone:
+              </div>
+              <div class="pb-2">
+                <a href="tel:123123123" class="text-blue-400">
+                  +00 123 123 123
+                </a>
+              </div>
+              <div class="flex mb-1">
+                <img src="./icons8-place-marker-30.png" width="20" class="mr-2" /> Address
+              </div>
+              <div class="mb-1">
+                <span class="ml-7">
+                  street name
+                </span>
+              </div>
+              <div class="pb-2">
+                <span class="ml-7">
+                  sample zip code
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="pl-4"> -->
+          <div class="">
+            <h4 class="text-xl mb-8 font-thin tracking-wider uppercase text-gray-400">
+              opening hours
+            </h4>
+            <div class="text-sm text-gray-500">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Monday:</span>
+                  <span>8:00 - 16:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Tuesday:</span>
+                  <span>8:00 - 16:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Wednesday:</span>
+                  <span>8:00 - 16:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Thursday:</span>
+                  <span>8:00 - 16:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Friday:</span>
+                  <span>8:00 - 16:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Saturday:</span>
+                  <span>9:00 - 14:00</span>
+                </div>
+                <div class="flex justify-between mb-1">
+                  <span>Sunday:</span>
+                  <span>Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pb-7">
+        <div class="text-sm mb-4">
+          &copy; <span id="year"></span>
+        </div>
+        <div class="text-xs tracking-wide">
+          designed by Jakub Gania
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script section -->
+  <script>
+    window.onload = (event) => {
+      if (localStorage.getItem('confirmation') == null) {
+        document.getElementById('privacy-policy-alert').classList.remove('hidden')
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+      }
+
+      const date = new Date()
+      let year = date.getFullYear()
+      document.getElementById("year").innerHTML = year
+    }
+
+    function accept() {
+      localStorage.setItem('confirmation', JSON.stringify(true))
+      document.getElementById('privacy-policy-alert').classList.add('hidden')
+      document.getElementsByTagName('html')[0].style.overflow = 'auto'
+    }
+
+    // enter your sentences
+    // you can add more or less items
+    var words = [
+      'first sentence',
+      'second sentence',
+      'third sentence',
+      'fourth sentence',
+      'fifth sentence',
+    ]
+
+    // time in milliseconds
+    var time = 2400
+
+    element = document.getElementById("word-changer")
+    currentWord = -1
+
+    // loop to replace sentences in intervals
+    window.setInterval(function() {
+      currentWord++
+
+      if(currentWord === words.length) currentWord = 0
+      element.textContent = words[currentWord]
+    }, time)
+  </script>
+
+</body>
+</html>
