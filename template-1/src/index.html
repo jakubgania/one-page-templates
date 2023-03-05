@@ -68,12 +68,12 @@
 
   <!-- navigation bar -->
   <nav class="bg-gradient-to-r from-cyan-500 to-blue-500">
-    <div class="max-w-screen-2xl h-16 flex items-center justify-between mx-auto">
+    <div class="max-w-screen-2xl h-16 px-10 2xl:px-0 flex items-center justify-between mx-auto">
       <div>
         <img src="./test-logo.png" width="130" />
       </div>
       <div>
-        <ul class="flex font-semibold list-none">
+        <ul class="md:flex font-semibold list-none hidden">
           <li class="pr-4 text-sm tracking-wide">
             <a class="hover:text-gray-700 ease-in duration-100" href="#section_1">
               Title 1
@@ -97,7 +97,7 @@
         </ul>
       </div>
       <div>
-        <div class="flex">
+        <div class="md:flex hidden">
           <div class="px-2">
             EN
           </div>
@@ -106,8 +106,58 @@
           </div>
         </div>
       </div>
+      <div class="md:hidden" onclick="menu()">
+        <img class="w-9" src="./icons8-menu-96.png" alt="" width="" height="" />
+      </div>
     </div>
   </nav>
+
+  <!-- mobile dropdown-menu -->
+  <div id="dropdown-menu" class="hidden absolute top-0 bg-white w-full h-screen z-50 px-10 cursor-default">
+    <div class="flex h-16 items-center justify-between">
+      <p class="text-xl tracking-wide font-semibold">
+        Menu
+      </p>
+      <div onclick="closeDropdownMenu()">
+        <img class="w-9" src="./icons8-close-96.png" alt="" width="" height="" />
+      </div>
+    </div>
+    <div class="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div class="text-7xl font-black text-gray-100">
+        your
+      </div>
+      <div class="text-7xl font-black text-gray-100">
+        sample
+      </div>
+      <div class="text-7xl font-black text-gray-100">
+        text.
+      </div>
+    </div>
+    <div class="mt-10">
+      <ul class="w-full">
+        <li class="pb-10" onclick="closeDropdownMenu('section_1')">
+          <p class="text-2xl font-black tracking-wide text-gray-700">
+            Title 1
+          </p>
+        </li>
+        <li class="pb-10" onclick="closeDropdownMenu('section_2')">
+          <p class="text-2xl font-black tracking-wide text-gray-700">
+            Title 2
+          </p>
+        </li>
+        <li class="pb-10" onclick="closeDropdownMenu('section_3')">
+          <p class="text-2xl font-black tracking-wide text-gray-700">
+            Title 3
+          </p>
+        </li>
+        <li class="pb-10" onclick="closeDropdownMenu('section_4')">
+          <p class="text-2xl font-black tracking-wide text-gray-700">
+            Title 3
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- top section with main title -->
   <div class="h-[44rem] flex items-center bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -555,6 +605,25 @@
       if(currentWord === words.length) currentWord = 0
       element.textContent = words[currentWord]
     }, time)
+
+    function menu() {
+      if (document.getElementById('dropdown-menu').classList.contains('hidden')) {
+        document.getElementById('dropdown-menu').classList.remove('hidden')
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+      } else {
+        document.getElementById('dropdown-menu').classList.add('hidden')
+        document.getElementsByTagName('html')[0].style.overflow = 'auto'
+      }
+    }
+
+    function closeDropdownMenu(item) {
+      if (item) {
+        document.getElementById(item).scrollIntoView()
+      }
+
+      document.getElementById('dropdown-menu').classList.add('hidden')
+      document.getElementsByTagName('html')[0].style.overflow = 'auto'
+    }
   </script>
 
 </body>
