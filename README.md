@@ -1,6 +1,6 @@
 # One Page Templates
 
-- Project in development '#1589F0'
+- <span style="#1589F0">Project in development</span>
 
 - This repository contains simple one-page designs.
 
