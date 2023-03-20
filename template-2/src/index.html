@@ -6,14 +6,14 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <div class="max-w-3xl mx-auto font-mono">
-    <div class="my-32">
+  <div class="max-w-3xl mx-auto font-mono p-4 sm:p-3 md:p-2">
+    <div class="my-16 sm:my-24 md:my-32">
       <div class="flex items-center justify-end">
-        <div class="mr-8 text-right">
-          <span class="text-4xl text-slate-300 font-bold tracking-wide">
+        <div class="mr-4 sm:mr-8 text-right">
+          <span class="text-2xl sm:text-3xl md:text-4xl text-slate-300 font-bold tracking-wide">
             Example Name
           </span>
-          <p class="text-slate-500">
+          <p class="text-sm sm:text-base text-slate-500">
             Full Stack Web Developer
           </p>
         </div>
@@ -37,13 +37,12 @@
       </p>
     </div>
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Information
       </h2>
       <div class="text-gray-200 cursor-default">
-        <div class="flex flex-row mb-4 group">
-          <!-- <div class="basis-1/3 group-hover:translate-x-1/4 transition delay-75 duration-100 ease-in-out"> -->
-          <div class="basis-1/3 group-hover:text-right transition ease-in">
+        <div class="flex flex-row mb-4">
+          <div class="basis-1/3 transition ease-in">
             <p>
               <span class="text-blue-600 font-black">_</span>name:
             </p>
@@ -114,15 +113,16 @@
         </div>
       </div>
     </div>
+
+    <!-- CONTACT SECTION -->
     <div class="mb-12">
-      <!-- contact -->
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Contact
       </h2>
       <div class="text-base mb-4 text-gray-200">
         If you have any questions or proposals for cooperation, write or call.
       </div>
-      <div class="grid grid-cols-2 gap-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <div class="py-4 pl-4 rounded-xl bg-slate-900 group">
           <div class="flex items-center cursor-default">
             <div class="w-8">
@@ -149,15 +149,19 @@
         </div>
       </div>
     </div>
+
+    <!-- EXPERIENCE SECTION -->
     <div class="mb-12">
-      <!-- experience -->
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Experience
       </h2>
-      <ul class="list-disc text-gray-200">
+      <div class="text-base mb-4 text-gray-200">
+        Below is a description of my professional experience along with individual tasks and a breakdown by years.
+      </div>
+      <ul class="list-inside lg:list-outside list-disc text-gray-200">
         <li class="mb-6">
           <div class="text-lg font-extrabold mb-3 text-gray-300">
-            2023 <span class="text-blue-600">>></span> Company Name 1
+            2023 <br class="block sm:hidden" /> <span class="text-blue-600">>></span> Company Name 1
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -181,7 +185,7 @@
         </li>
         <li class="mb-6">
           <div class="text-lg font-extrabold mb-3 text-gray-300">
-            2020 <span class="text-blue-600">>></span> Company Name 2
+            2020 <br class="block sm:hidden" /> <span class="text-blue-600">>></span> Company Name 2
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -205,7 +209,7 @@
         </li>
         <li class="mb-6">
           <div class="text-lg font-extrabold mb-3 text-gray-300">
-            2018 <span class="text-blue-600">>></span> Company Name 3
+            2018 <br class="block sm:hidden" /> <span class="text-blue-600">>></span> Company Name 3
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -229,7 +233,7 @@
         </li>
         <li class="mb-6">
           <div class="text-lg font-extrabold mb-3 text-gray-300">
-            2014 <span class="text-blue-600">>></span> Company Name 4
+            2014 <br class="block sm:hidden" /> <span class="text-blue-600">>></span> Company Name 4
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -249,31 +253,14 @@
                 Description 3
               </li>
             </ul>
-          </div>
-        </li>
-        <li class="mb-6">
-          <!-- <div class="text-lg font-extrabold mb-3 text-gray-300">
-            2014 <span class="text-blue-600">>></span> Company Name 4
-          </div> -->
-          <div class="text-lg font-extrabold text-gray-300 mb-8">
-            <div>
-              2014
-            </div>
-            <div class="w-32 rotate-[20deg] -mt-5">
-              <span class="text-blue-600 ml-14">>></span>
-            </div>
-            <div class="ml-24 -mt-4">
-              Company name 4
-            </div>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </li>
       </ul>
     </div>
+
+    <!-- TECHNOLOGIES AND TOOLS SECTION -->
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Technologies and Tools
       </h2>
       <div class="text-base mb-4 text-gray-200">
@@ -283,114 +270,114 @@
 
         <!-- choose technologies you know or add your own -->
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-amazon-web-services-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-amazon-web-services-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             AWS
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-angularjs-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-angularjs-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Angular
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-bash-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-bash-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Bash
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-bitbucket-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-bitbucket-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Bitbucket
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-css3-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-css3-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             CSS3
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-docker-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-docker-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Docker
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-flutter-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-flutter-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Flutter
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-github-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-github-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Github
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-html-5-96-2.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-html-5-96-2.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             HTML5
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-javascript-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-javascript-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             JavaScript
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-nuxt-jc-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-nuxt-jc-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             NuxtJS
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-python-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-python-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Python
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-react-native-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-react-native-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             React
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-tailwindcss-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-tailwindcss-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             Tailwindcss
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-typescript-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-typescript-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             TypeScript
           </span>
         </div>
 
-        <div class="flex py-1.5 px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
-          <img src="./icons8-vue-js-96.png" class="w-12 h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
-          <span class="ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
+        <div class="flex py-1 sm:py-1.5 px-2 sm:px-3 md:px-4 mr-2 mb-2 bg-slate-900 rounded-xl items-center group duration-150">
+          <img src="./icons8-vue-js-96.png" class="w-10 h-10 sm:w-12 sm:h-12 p-1 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
+          <span class="ml-2 sm:ml-3 md:ml-4 text-gray-200 text-sm tracking-wide font-bold cursor-default">
             VueJS
           </span>
         </div>
@@ -398,16 +385,15 @@
       </div>
     </div>
 
+    <!-- PROJECTS SECTION -->
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Projects
       </h2>
       <div class="text-base mb-4 text-gray-200">
         Some of my most important projects.
       </div>
-      <div class="grid grid-cols-2 gap-2">
-
-        <!-- top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2">
 
         <div class="bg-slate-900 rounded-xl">
           <div class="bg-[url('../src/amazing-background.webp')] bg-no-repeat bg-cover bg-center rounded-tl-xl rounded-tr-xl relative">
@@ -524,8 +510,9 @@
       </div>
     </div>
 
+    <!-- OTHER LINKS SECTION -->
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Links
       </h2>
       <div class="text-base mb-4 text-gray-200">
@@ -536,7 +523,7 @@
         <!-- link 1 -->
         <a href="" target="" class="flex items-center w-full rounded-xl p-1.5 mb-4 bg-slate-900 group hover:bg-slate-800 transition-shadow duration-200">
           <div class="flex w-full text-center">
-            <div class="w-12 h-12 items-center flex">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 items-center flex">
               <img src="./thumb-1.webp" class="p-0.5 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
             </div>
             <h2 class="flex justify-center items-center font-bold w-full text-sm text-gray-200 -ml-10 group-hover:tracking-widest ease-in-out duration-150">
@@ -548,7 +535,7 @@
         <!-- link 2 -->
         <a href="" target="" class="flex items-center w-full rounded-xl p-1.5 mb-4 bg-slate-900 group hover:bg-slate-800 transition-shadow duration-200">
           <div class="flex w-full text-center">
-            <div class="w-12 h-12 items-center flex">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 items-center flex">
               <img src="./thumb-2.webp" class="p-0.5 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
             </div>
             <h2 class="flex justify-center items-center font-bold w-full text-sm text-gray-200 -ml-10 group-hover:tracking-widest ease-in-out duration-150">
@@ -560,7 +547,7 @@
         <!-- link 3 -->
         <a href="" target="" class="flex items-center w-full rounded-xl p-1.5 mb-4 bg-slate-900 group hover:bg-slate-800 transition-shadow duration-200">
           <div class="flex w-full text-center">
-            <div class="w-12 h-12 items-center flex">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 items-center flex">
               <img src="./thumb-3.webp" class="p-0.5 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
             </div>
             <h2 class="flex justify-center items-center font-bold w-full text-sm text-gray-200 -ml-10 group-hover:tracking-widest ease-in-out duration-150">
@@ -572,7 +559,7 @@
         <!-- link 4 -->
         <a href="" target="" class="flex items-center w-full rounded-xl p-1.5 mb-4 bg-slate-900 group hover:bg-slate-800 transition-shadow duration-200">
           <div class="flex w-full text-center">
-            <div class="w-12 h-12 items-center flex">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 items-center flex">
               <img src="./thumb-4.webp" class="p-0.5 group-hover:-rotate-[20deg] transition-all ease-in-out duration-150" />
             </div>
             <h2 class="flex justify-center items-center font-bold w-full text-sm text-gray-200 -ml-10 group-hover:tracking-widest ease-in-out duration-150">
@@ -585,14 +572,15 @@
       </div>
     </div>
 
+    <!-- HOBBYS SECTION -->
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Hobbys
       </h2>
       <div class="text-base mb-4 text-gray-200">
         My hobbies and interests.
       </div>
-      <div class="text-base text-slate-400 font-medium">
+      <div class="text-base text-slate-400 font-medium cursor-default">
         <span class="underline decoration-2 decoration-lime-400">Sport</span>,
         <span class="underline decoration-2 decoration-amber-400">Mountain biking</span>,
         <span class="underline decoration-2 decoration-sky-400">New technologies</span>,
@@ -606,65 +594,66 @@
       </div>
     </div>
 
+    <!-- GALLERY SECTION -->
     <div class="mb-12">
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Gallery
       </h2>
       <div class="text-base mb-4 text-gray-200">
         Some of my photos.
       </div>
       <div>
-        <div class="flex mb-8">
-          <div class="flex basis-1/3 text-gray-200 items-center">
+        <div class="flex flex-col-reverse sm:flex-row mb-8">
+          <div class="flex basis-full sm:basis-1/3 text-gray-200 items-center">
             <p class="text-sm">
               Description of the first photo.
             </p>
           </div>
-          <div class="basis-2/3">
+          <div class="basis-full sm:basis-2/3">
             <img class="rounded-xl" src="./gallery-background.webp" />
           </div>
         </div>
 
-        <div class="flex mb-8">
-          <div class="flex basis-1/3 text-gray-200 items-center">
+        <div class="flex flex-col-reverse sm:flex-row mb-8">
+          <div class="flex basis-full sm:basis-1/3 text-gray-200 items-center">
             <p class="text-sm">
               Description of the second photo.
             </p>
           </div>
-          <div class="basis-2/3">
+          <div class="basis-full sm:basis-2/3">
             <img class="rounded-xl" src="./gallery-background.webp" />
           </div>
         </div>
 
-        <div class="flex mb-8">
-          <div class="flex basis-1/3 text-gray-200 items-center">
+        <div class="flex flex-col-reverse sm:flex-row mb-8">
+          <div class="flex basis-full sm:basis-1/3 text-gray-200 items-center">
             <p class="text-sm">
               Description of the third photo.
             </p>
           </div>
-          <div class="basis-2/3">
+          <div class="basis-full sm:basis-2/3">
             <img class="rounded-xl" src="./gallery-background.webp" />
           </div>
         </div>
       </div>
     </div>
 
+    <!-- SOCIAL MEDIA SECTION -->
     <div class="mb-12">
-      <!-- social -->
-      <h2 class="text-3xl mb-6 text-gray-400">
+      <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 text-gray-400">
         Social Media
       </h2>
       <div class="text-base mb-4 text-gray-200">
         Check out my social media.
       </div>
-      <div class="grid grid-cols-4 gap-2">
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-2">
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-facebook-messenger-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-facebook-messenger-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 Messenger
               </span>
             </div>
@@ -673,10 +662,10 @@
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-discord-new-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-discord-new-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 Discord
               </span>
             </div>
@@ -685,10 +674,10 @@
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-instagram-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-instagram-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 Instagram
               </span>
             </div>
@@ -697,10 +686,10 @@
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-youtube-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-youtube-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 YouTube
               </span>
             </div>
@@ -709,10 +698,10 @@
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-slack-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-slack-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 Slack
               </span>
             </div>
@@ -721,10 +710,10 @@
         <a href="" target="_blank">
           <div class="rounded-xl text-center bg-slate-900 group">
             <div class="py-4">
-              <div class="flex justify-center mb-4">
-                <img class="w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-linkedin-2-96.png" width="96" />
+              <div class="flex justify-center mb-2 sm:mb-3 md:mb-4">
+                <img class="w-14 sm:w-20 md:w-24 group-hover:scale-105 group-hover:-rotate-12 ease-in duration-100" src="./icons8-linkedin-2-96.png" width="96" />
               </div>
-              <span class="text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
+              <span class="text-sm sm:text-base text-slate-600 font-bold group-hover:tracking-wider ease-in duration-100">
                 LinkedIn
               </span>
             </div>
@@ -734,7 +723,7 @@
     </div>
     <footer class="my-32">
       <div class="text-center">
-        <span class="text-gray-200">
+        <span class="text-sm text-gray-200">
           designed by Jakub Gania
         </span>
       </div>
