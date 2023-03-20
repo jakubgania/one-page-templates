@@ -1,7 +1,5 @@
 # One Page Templates
 
-- <span style="color: #1589F0;">Project in development</span>
-
 - This repository contains simple one-page designs.
 
 - Each project uses technologies such as: HTML, JavaScript, TailwindCSS.
