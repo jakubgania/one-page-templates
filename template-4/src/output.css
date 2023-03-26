@@ -575,6 +575,26 @@ video {
   margin-top: 7rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -653,6 +673,32 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-default {
@@ -773,9 +819,31 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-gray-100 {
+  --tw-gradient-from: #f3f4f6;
+  --tw-gradient-to: rgb(243 244 246 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-gray-200 {
+  --tw-gradient-from: #e5e7eb;
+  --tw-gradient-to: rgb(229 231 235 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-fuchsia-500 {
   --tw-gradient-to: rgb(217 70 239 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #d946ef, var(--tw-gradient-to);
+}
+
+.via-gray-200 {
+  --tw-gradient-to: rgb(229 231 235 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #e5e7eb, var(--tw-gradient-to);
+}
+
+.via-gray-300 {
+  --tw-gradient-to: rgb(209 213 219 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #d1d5db, var(--tw-gradient-to);
 }
 
 .to-blue-500 {
@@ -788,6 +856,10 @@ video {
 
 .to-pink-500 {
   --tw-gradient-to: #ec4899;
+}
+
+.to-sky-500 {
+  --tw-gradient-to: #0ea5e9;
 }
 
 .p-2 {
@@ -898,6 +970,18 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pb-48 {
+  padding-bottom: 12rem;
 }
 
 .text-left {
@@ -1013,6 +1097,11 @@ video {
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-zinc-500 {
+  --tw-text-opacity: 1;
+  color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
 .drop-shadow-md {
@@ -1257,6 +1346,14 @@ video {
     margin-left: 2rem;
   }
 
+  .lg\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .lg\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .lg\:h-2 {
     height: 0.5rem;
   }
@@ -1287,6 +1384,10 @@ video {
 
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:py-36 {
