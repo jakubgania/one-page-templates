@@ -651,6 +651,10 @@ video {
   width: 8rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-\[3\.4rem\] {
   max-width: 3.4rem;
 }
@@ -1109,6 +1113,14 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
+}
+
 .duration-100 {
   transition-duration: 100ms;
 }
@@ -1140,6 +1152,10 @@ video {
 
 .group:hover .group-hover\:pl-4 {
   padding-left: 1rem;
+}
+
+.group:hover .group-hover\:pl-1 {
+  padding-left: 0.25rem;
 }
 
 .group:hover .group-hover\:tracking-wider {
