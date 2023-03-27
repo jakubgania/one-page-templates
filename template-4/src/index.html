@@ -11,44 +11,70 @@
 <body>
   
   <nav class="max-w-screen-lg mx-auto flex h-16 items-center justify-between">
-    <div>
+    <div class="pl-4">
       <p class="text-base md:text-xl font-medium cursor-default">
         Logo
       </p>
     </div>
     <div>
-      <ul class="md:flex list-none">
-        <li class="pr-4 text-sm tracking-wide">
+      <ul class="md:flex list-none text-slate-700 hidden">
+        <li class="pr-4 text-xs tracking-wide">
           <a href="#about">
-            about
+            About
           </a>
         </li>
-        <li class="pr-4 text-sm">
+        <li class="pr-4 text-xs">
           <a href="#services">
-            services
+            Services
           </a>
         </li>
-        <li class="pr-4 text-sm">
+        <li class="pr-4 text-xs">
           <a href="#additional-information">
-            add.i.
+            Add.i.
           </a>
         </li>
-        <li class="pr-4 text-sm">
+        <li class="pr-4 text-xs">
+          <a href="#map">
+            Map
+          </a>
+        </li>
+        <li class="pr-4 text-xs">
           <a href="#opinions">
-            opinions
+            Opinions
           </a>
         </li>
-        <li class="pr-4 text-sm">
+        <li class="pr-4 text-xs">
+          <a href="#gallery">
+            Gallery
+          </a>
+        </li>
+        <li class="pr-4 text-xs">
           <a href="#contact">
-            contact
+            Contact
+          </a>
+        </li>
+        <li class="pr-4 text-xs">
+          <a href="#social">
+            Social
           </a>
         </li>
       </ul>
     </div>
-    <div>
-      icon
+    <div class="pr-4 md:hidden" onclick="menu()">
+      <img class="w-9" src="./icons8-menu-96.png" width="96" height="96" />
     </div>
   </nav>
+
+  <div id="dropdown-menu" class="hidden absolute top-0 bg-white w-full h-screen z-50 cursor-default">
+    <div class="flex h-16 items-center justify-between">
+      <p class="text-base tracking-normal font-medium pl-4">
+        Menu
+      </p>
+      <div class="pr-4" onclick="closeDropdownMenu()">
+        <img class="w-9" src="./icons8-close-96.png" width="96" height="96" />
+      </div>
+    </div>
+  </div>
 
   <div class="h-[20rem] lg:h-[42rem] flex justify-center items-center bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500">
     <div>
@@ -741,6 +767,25 @@
       if (currentWord === words.length) currentWord = 0
       element.textContent = words[currentWord]
     }, 2400)
+
+    function menu() {
+      if (document.getElementById('dropdown-menu').classList.contains('hidden')) {
+        document.getElementById('dropdown-menu').classList.remove('hidden')
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+      } else {
+        document.getElementById('dropdown-menu').classList.add('hidden')
+        document.getElementsByTagName('html')[0].style.overflow = 'auto'
+      }
+    }
+
+    function closeDropdownMenu(item) {
+      if (item) {
+        document.getElementById(item).scrollIntoView()
+      }
+
+      document.getElementById('dropdown-menu').classList.add('hidden')
+      document.getElementsByTagName('html')[0].style.overflow = 'auto'
+    }
   </script>
 
 </body>
