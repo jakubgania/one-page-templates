@@ -2,6 +2,8 @@
 
 - This repository contains simple one-page designs.
 
+- https://jakubgania.github.io/one-page-templates/
+
 - Each project uses technologies such as:
     - HTML
     - JavaScript
