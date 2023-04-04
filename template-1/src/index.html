@@ -68,46 +68,48 @@
 
   <!-- navigation bar -->
   <nav class="bg-gradient-to-r from-cyan-500 to-blue-500">
-    <div class="max-w-screen-2xl h-16 px-8 2xl:px-0 flex items-center justify-between mx-auto">
-      <div>
-        <img class="w-16 md:w-20 lg:w-24 2xl:w-[130px]" src="./public/test-logo.png" width="130" />
-      </div>
-      <div>
-        <ul class="md:flex font-normal list-none hidden">
-          <li class="pr-4 text-sm tracking-wide">
-            <a class="hover:text-gray-700 ease-in duration-100" href="#section_1">
-              Title 1
-            </a>
-          </li>
-          <li class="pr-4 text-sm tracking-wide">
-            <a class="hover:text-gray-700 ease-in duration-100" href="#section_2">
-              Title 2
-            </a>
-          </li>
-          <li class="pr-4 text-sm tracking-wide">
-            <a class="hover:text-gray-700 ease-in duration-100" href="#section_3">
-              Title 3
-            </a>
-          </li>
-          <li class="pr-4 text-sm tracking-wide">
-            <a class="hover:text-gray-700 ease-in duration-100" href="#section_4">
-              Title 4
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div class="md:flex hidden text-sm font-normal cursor-default">
-          <div class="px-1 hover:text-gray-700 ease-in duration-100">
-            EN
-          </div>
-          <div class="px-1 hover:text-gray-700 ease-in duration-100">
-            DE
+    <div class="max-w-screen-2xl mx-auto">
+      <div class="h-16 flex items-center px-8 md:mx-6 lg:mx-4 2xl:px-0">
+        <div class="basis-1/5">
+          <img class="w-16 md:w-20 lg:w-24 2xl:w-[130px]" src="./public/test-logo.png" width="130" />
+        </div>
+        <div class="basis-3/5 flex justify-around">
+          <ul class="md:flex font-normal list-none hidden">
+            <li class="pr-4 text-sm tracking-wide">
+              <a class="hover:text-gray-700 ease-in duration-100" href="#section_1">
+                Section 1
+              </a>
+            </li>
+            <li class="pr-4 text-sm tracking-wide">
+              <a class="hover:text-gray-700 ease-in duration-100" href="#section_2">
+                Section 2
+              </a>
+            </li>
+            <li class="pr-4 text-sm tracking-wide">
+              <a class="hover:text-gray-700 ease-in duration-100" href="#section_3">
+                Section 3
+              </a>
+            </li>
+            <li class="pr-4 text-sm tracking-wide">
+              <a class="hover:text-gray-700 ease-in duration-100" href="#section_4">
+                Section 4
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="basis-1/5 flex justify-end">
+          <div class="md:flex hidden text-sm font-normal cursor-default">
+            <div class="px-1 hover:text-gray-700 ease-in duration-100">
+              EN
+            </div>
+            <div class="px-1 hover:text-gray-700 ease-in duration-100">
+              DE
+            </div>
           </div>
         </div>
-      </div>
-      <div class="md:hidden" onclick="menu()">
-        <img class="w-9" src="./public/icons8-menu-96.png" alt="" width="" height="" />
+        <div class="md:hidden" onclick="menu()">
+          <img class="w-9" src="./public/icons8-menu-96.png" alt="" width="" height="" />
+        </div>
       </div>
     </div>
   </nav>
@@ -185,7 +187,7 @@
       <div>
         <img src="./public/temp-image.jpg" />
       </div>
-      <div class="ml-0 mt-8 md:ml-32 md:mt-0">
+      <div class="ml-0 mt-8 md:ml-10 md:mt-0">
         <h2 class="text-3xl font-semibold tracking-wide">
           Section_1
         </h2>
@@ -297,7 +299,7 @@
 
   <div id="section_3" class="max-w-screen-2xl mx-auto 2xl:my-60 lg:my-40 md:my-32 my-24">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center mx-8 md:mx-6 lg:mx-4">
-      <div class="mr-0 md:mr-32">
+      <div class="mr-0 md:mr-10">
         <h3 class="text2xl md:text-3xl font-semibold tracking-wide">
           Some title
         </h3>
