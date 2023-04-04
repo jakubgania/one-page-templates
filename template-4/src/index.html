@@ -185,29 +185,35 @@
   </div>
 
   <div class="flex justify-center mt-14">
-    <img class="w-24" src="./arrow-blue-3.svg" />
+    <img class="w-16 md:w-24" src="./arrow-blue-3.svg" />
   </div>
 
   <div class="max-w-screen-2xl mx-auto mt-12 mb-12 md:mt-18 md:mb-18 lg:mt-24 lg:mb-24 pl-6 pr-6">
     <div class="h-0.5 sm:h-1 md:h1.5 lg:h-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12 md:my-18 lg:my-24">
-      <div>
-        <img class="rounded-lg" src="./test-14.jpg" width="600" height="600" />
-        <p class="text-xs">
-          Image 1
-        </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 my-12 md:my-18 lg:my-24">
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="600" height="600" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
       </div>
-      <div>
-        <img class="rounded-lg" src="./test-14.jpg" width="600" height="600" />
-        <p class="text-xs">
-          Image 2
-        </p>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="600" height="600" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
       </div>
-      <div>
-        <img class="rounded-lg" src="./test-14.jpg" width="600" height="600" />
-        <p class="text-xs">
-          Image 3
-        </p>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="600" height="600" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
       </div>
     </div>
     <div class="h-0.5 sm:h-1 md:h1.5 lg:h-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500"></div>
@@ -334,10 +340,10 @@
     </div>
   </div>
 
-  <div class="mt-16 mb-16">
+  <div class="mt-16 mb-16 pl-6 pr-6">
     <div class="max-w-screen-2xl mx-auto">
       <div class="flex justify-between mb-2">
-        <div class="basis-1/6 bg-slate-100 rounded-lg p-2">
+        <div class="basis-1/4 md:basis-1/6 bg-slate-100 rounded-lg p-2">
           <div>
             <p class="text-xs font-bold tracking-wide text-slate-700">
               Country
@@ -349,7 +355,7 @@
             </p>
           </div>
         </div>
-        <div class="basis-1/6 bg-slate-100 rounded-lg p-2">
+        <div class="basis-1/4 md:basis-1/6 bg-slate-100 rounded-lg p-2">
           <div>
             <p class="text-xs font-bold tracking-wide text-slate-700">
               City
@@ -400,7 +406,7 @@
             </p>
           </div>
         </div> -->
-        <div class="basis-1/6 bg-slate-100 rounded-lg p-2">
+        <div class="basis-1/4 md:basis-1/6 bg-slate-100 rounded-lg p-2">
           <div>
             <p class="text-xs font-bold tracking-wide text-slate-700">
               Street
@@ -408,11 +414,11 @@
           </div>
           <div>
             <p class="text-xs tracking-wide text-slate-800">
-              Example Street Name
+              Example St. Name
             </p>
           </div>
         </div>
-        <div class="basis-1/6 bg-slate-100 rounded-lg p-2">
+        <div class="basis-1/4 md:basis-1/6 bg-slate-100 rounded-lg p-2">
           <div>
             <p class="text-xs font-bold tracking-wide text-slate-700">
               Zip code
@@ -429,7 +435,7 @@
   </div>
 
   <div class="flex justify-center mt-14">
-    <img class="w-24" src="./arrow-blue-3.svg" />
+    <img class="w-16 md:w-24" src="./arrow-blue-3.svg" />
   </div>
 
   <div id="#opinions" class="max-w-screen-lg mx-auto pl-6 pr-6">
@@ -530,7 +536,7 @@
   </div>
 
   <div class="flex justify-center mt-14">
-    <img class="w-24" src="./arrow-blue-3.svg" />
+    <img class="w-16 md:w-24" src="./arrow-blue-3.svg" />
   </div>
 
   <div id="about" class="max-w-screen-lg mx-auto pl-8 pr-8">
@@ -548,8 +554,56 @@
 
   <div class="max-w-screen-2xl mx-auto mt-12 md:mt-18 md:mb-18 lg:mt-24 lg:mb-24 pl-6 pr-6">
     <div class="h-0.5 sh:h-1 md:h-1.5 lg:h-2 bg-gradient-to-r rounded-lg from-gray-200 via-gray-300 to-sky-500"></div>
-    <div class="grid lg:grid-cols-4 lg:gap-4 grid-cols-2 gap-1 my-12 md:my-18 lg:my-24">
-      <div>
+    <div class="grid lg:grid-cols-3 lg:gap-2 grid-cols-2 gap-1 my-12 md:my-18 lg:my-24">
+      <div class="relative aspect-square">
+          <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+          <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+            <p class="text-xs text-white py-1 px-2">
+              Image title
+            </p>
+          </div>
+      </div>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
+      </div>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
+      </div>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
+      </div>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
+      </div>
+      <div class="relative aspect-square">
+        <img class="rounded-xl" src="./temp-image.jpg" loading="lazy" width="500" height="500" />
+        <div class="absolute bottom-0 bg-gray-800 opacity-50 rounded-bl-xl rounded-tr-xl">
+          <p class="text-xs text-white py-1 px-2">
+            Image title
+          </p>
+        </div>
+      </div>
+      <!-- <div>
         <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
         <p class="text-xs">
           Image description
@@ -560,49 +614,13 @@
         <p class="text-xs">
           Image description
         </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
-      <div>
-        <img class="rounded-xl" src="./test-14.jpg" loading="lazy" width="500" height="500" />
-        <p class="text-xs">
-          Image description
-        </p>
-      </div>
+      </div> -->
     </div>
     <div class="h-0.5 sh:h-1 md:h-1.5 lg:h-2 bg-gradient-to-r rounded-lg from-gray-200 via-gray-300 to-sky-500"></div>
   </div>
 
   <div class="flex justify-center mt-14">
-    <img class="w-24" src="./arrow-blue-3.svg" />
+    <img class="w-16 md:w-24" src="./arrow-blue-3.svg" />
   </div>
 
   <div id="contact" class="max-w-screen-lg mx-auto pl-6 pr-6">
@@ -653,7 +671,7 @@
   </div>
 
   <div class="flex justify-center mt-14">
-    <img class="w-24" src="./arrow-blue-3.svg" />
+    <img class="w-16 md:w-24" src="./arrow-blue-3.svg" />
   </div>
 
   <div class="max-w-screen-lg mx-auto pl-8 pr-8 mt-10 pb-48">
