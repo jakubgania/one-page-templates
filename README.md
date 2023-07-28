@@ -16,7 +16,3 @@
 Enter the project then:
 
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-
-:warning: DO NOT FORGET
-
-In the code, insert your own graphics or links to your own social media platforms and so on.
